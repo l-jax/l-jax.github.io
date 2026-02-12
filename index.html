@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Laura Jaques</title>
+
+    <meta name="description" content="Software engineer. Maker. Writer." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Laura Jaques — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software engineer. Maker. Writer."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://l-jax.github.io" />
+    <!-- <meta property="og:image" content="https://l-jax.github.io/og-image.png"> -->
+
+    <!-- X card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Laura Jaques — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Software engineer. Maker. Writer."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23d4845a'/></svg>"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --charcoal: #1c1a18;
+        --bone: #f0ece3;
+        --body: #c4bfb6;
+        --copper: #d4845a;
+        --rule: #3a3634;
+        --dim: #7a746e;
+        --serif: "Crimson Pro", Georgia, serif;
+        --sans: "IBM Plex Sans", system-ui, sans-serif;
+      }
+
+      html {
+        font-size: 18px;
+      }
+
+      body {
+        font-family: var(--sans);
+        background: var(--charcoal);
+        color: var(--bone);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1.5rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      ::selection {
+        background: var(--copper);
+        color: var(--charcoal);
+      }
+
+      .constellation {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .constellation svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .page {
+        max-width: 540px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      h1 {
+        font-family: var(--serif);
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 1.08;
+        letter-spacing: -0.01em;
+        margin-bottom: 0.5rem;
+      }
+
+      .subtitle {
+        font-size: 0.82rem;
+        color: var(--dim);
+        margin-bottom: 2.5rem;
+        letter-spacing: 0.01em;
+      }
+
+      .bio p {
+        font-size: 0.95rem;
+        line-height: 1.82;
+        margin-bottom: 1.4rem;
+        color: var(--body);
+      }
+
+      .bio p:last-child {
+        margin-bottom: 0;
+      }
+
+      hr {
+        border: none;
+        width: 72px;
+        height: 1px;
+        background: var(--rule);
+        margin: 2.5rem 0;
+      }
+
+      .contact {
+        font-size: 0.95rem;
+      }
+
+      .contact a {
+        color: var(--copper);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-color 0.15s ease;
+      }
+
+      .contact a:hover {
+        border-bottom-color: var(--copper);
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--copper);
+        outline-offset: 3px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(12px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .page > * {
+        animation: fadeIn 0.5s ease both;
+      }
+      h1 {
+        animation-delay: 0.05s;
+      }
+      .subtitle {
+        animation-delay: 0.08s;
+      }
+      .bio {
+        animation-delay: 0.15s;
+      }
+      hr {
+        animation-delay: 0.25s;
+      }
+      .contact {
+        animation-delay: 0.3s;
+      }
+
+      @media (max-width: 480px) {
+        html {
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 2.2rem;
+        }
+        body {
+          padding: 2rem 1.25rem;
+          align-items: flex-start;
+          padding-top: 4rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="constellation" aria-hidden="true">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        viewBox="0 0 1600 1000"
+      >
+        <!-- CASSIOPEIA -->
+        <circle cx="180" cy="130" r="2.2" fill="#6e6660" opacity="0.8" />
+        <circle cx="250" cy="70" r="2" fill="#6e6660" opacity="0.7" />
+        <circle cx="330" cy="125" r="2.5" fill="#7d756e" opacity="0.85" />
+        <circle cx="400" cy="62" r="1.8" fill="#6e6660" opacity="0.65" />
+        <circle cx="470" cy="130" r="2" fill="#6e6660" opacity="0.7" />
+        <line
+          x1="180"
+          y1="130"
+          x2="250"
+          y2="70"
+          stroke="#4a4440"
+          stroke-width="0.6"
+          opacity="0.32"
+        />
+        <line
+          x1="330"
+          y1="125"
+          x2="400"
+          y2="62"
+          stroke="#4a4440"
+          stroke-width="0.6"
+          opacity="0.28"
+        />
+
+        <!-- URSA MAJOR -->
+        <circle cx="1150" cy="180" r="2.2" fill="#6e6660" opacity="0.8" />
+        <circle cx="1165" cy="245" r="2" fill="#6e6660" opacity="0.7" />
+        <circle cx="1230" cy="260" r="1.8" fill="#6e6660" opacity="0.65" />
+        <circle cx="1218" cy="190" r="1.7" fill="#6e6660" opacity="0.6" />
+        <circle cx="1278" cy="175" r="2" fill="#6e6660" opacity="0.75" />
+        <circle cx="1340" cy="155" r="2.2" fill="#7d756e" opacity="0.85" />
+        <circle cx="1405" cy="128" r="1.8" fill="#6e6660" opacity="0.65" />
+        <line
+          x1="1150"
+          y1="180"
+          x2="1165"
+          y2="245"
+          stroke="#4a4440"
+          stroke-width="0.6"
+          opacity="0.32"
+        />
+        <line
+          x1="1278"
+          y1="175"
+          x2="1340"
+          y2="155"
+          stroke="#4a4440"
+          stroke-width="0.6"
+          opacity="0.28"
+        />
+
+        <!-- CORONA BOREALIS -->
+        <circle cx="150" cy="760" r="1.7" fill="#6e6660" opacity="0.65" />
+        <circle cx="185" cy="718" r="1.9" fill="#6e6660" opacity="0.7" />
+        <circle cx="228" cy="692" r="2.5" fill="#7d756e" opacity="0.85" />
+        <circle cx="280" cy="700" r="1.9" fill="#6e6660" opacity="0.7" />
+        <circle cx="322" cy="728" r="1.7" fill="#6e6660" opacity="0.65" />
+        <circle cx="352" cy="765" r="1.5" fill="#6e6660" opacity="0.55" />
+        <circle cx="365" cy="805" r="1.3" fill="#6e6660" opacity="0.5" />
+        <line
+          x1="185"
+          y1="718"
+          x2="228"
+          y2="692"
+          stroke="#4a4440"
+          stroke-width="0.6"
+          opacity="0.32"
+        />
+        <line
+          x1="280"
+          y1="700"
+          x2="322"
+          y2="728"
+          stroke="#4a4440"
+          stroke-width="0.6"
+          opacity="0.28"
+        />
+
+        <!-- PHOENIX -->
+        <circle cx="1200" cy="800" r="2.5" fill="#7d756e" opacity="0.85" />
+        <circle cx="1268" cy="855" r="2" fill="#6e6660" opacity="0.75" />
+        <circle cx="1340" cy="835" r="1.8" fill="#6e6660" opacity="0.65" />
+        <circle cx="1285" cy="778" r="1.7" fill="#6e6660" opacity="0.6" />
+        <circle cx="1245" cy="745" r="1.7" fill="#6e6660" opacity="0.65" />
+        <circle cx="1345" cy="895" r="1.5" fill="#6e6660" opacity="0.5" />
+        <line
+          x1="1200"
+          y1="800"
+          x2="1268"
+          y2="855"
+          stroke="#4a4440"
+          stroke-width="0.6"
+          opacity="0.3"
+        />
+
+        <!-- Dust stars -->
+        <circle cx="620" cy="55" r="1.3" fill="#5a5450" opacity="0.5" />
+        <circle cx="850" cy="90" r="1.1" fill="#5a5450" opacity="0.45" />
+        <circle cx="1020" cy="50" r="1.2" fill="#5a5450" opacity="0.48" />
+        <circle cx="80" cy="380" r="1.3" fill="#5a5450" opacity="0.45" />
+        <circle cx="1500" cy="400" r="1.1" fill="#5a5450" opacity="0.45" />
+        <circle cx="750" cy="480" r="1.1" fill="#5a5450" opacity="0.4" />
+        <circle cx="520" cy="340" r="1" fill="#5a5450" opacity="0.4" />
+        <circle cx="1050" cy="550" r="1.1" fill="#5a5450" opacity="0.42" />
+        <circle cx="680" cy="920" r="1.3" fill="#5a5450" opacity="0.48" />
+        <circle cx="500" cy="850" r="1.1" fill="#5a5450" opacity="0.45" />
+        <circle cx="900" cy="950" r="1.2" fill="#5a5450" opacity="0.42" />
+        <circle cx="1500" cy="680" r="1.1" fill="#5a5450" opacity="0.45" />
+        <circle cx="70" cy="560" r="1.2" fill="#5a5450" opacity="0.42" />
+        <circle cx="380" cy="480" r="1" fill="#5a5450" opacity="0.38" />
+        <circle cx="1100" cy="700" r="1" fill="#5a5450" opacity="0.38" />
+        <circle cx="200" cy="420" r="1.1" fill="#5a5450" opacity="0.42" />
+        <circle cx="1400" cy="550" r="1" fill="#5a5450" opacity="0.4" />
+      </svg>
+    </div>
+
+    <div class="page">
+      <h1>Laura Jaques</h1>
+      <p class="subtitle">SOFTWARE ENGINEER</p>
+
+      <div class="bio">
+        <p>
+          I'm drawn to problems in liminal spaces. The cracks between
+          disciplines. The kind of work that asks you to speak more than one
+          language.
+        </p>
+
+        <p>
+          I trained as a scientist, then worked as a science communicator; I
+          learned to weave complex systems into stories anyone can understand. I
+          still do that, but with code as well as words.
+        </p>
+
+        <p>
+          I see gaps because I've navigated spaces that weren't built for me.
+        </p>
+      </div>
+
+      <hr />
+
+      <p class="contact">
+        <a href="https://linkedin.com/in/laura-jaques">LinkedIn</a>
+      </p>
+    </div>
+  </body>
+</html>
